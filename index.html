@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Making The AI Control Plane Easy To Sell In 2027</title>
+<title>Making The AI Control Plane Easy To Sell In 2027 (v2)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;800&display=swap">
 <style>
 :root{--ink:#0f2b3d;--mute:#52697a;--bg:#fff;--mist:#f2f6f5;--line:#d6e0de;--lime:#8dc63f;--lg:#3f7d00;--hero:#eaeeef;--bad:#d9503f;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
@@ -41,7 +41,27 @@ button{font:600 15px Figtree,system-ui,sans-serif;cursor:pointer}button:focus-vi
 .t1 div{background:#f6d4cf}.t2 div{background:#d9efbd}
 .proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin:22px 0}.proof div{background:#0f2b3d;color:#fff;border-radius:12px;padding:18px}.proof b{display:block;font-size:34px;line-height:1.05;color:#8dc63f}
 .start{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}.start div{border-left:5px solid var(--lime);padding:2px 14px}
+[hidden]{display:none!important}
+.sn{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line)}.sn .w{display:flex;gap:6px;overflow-x:auto;padding:8px 20px}.sn a{white-space:nowrap;text-decoration:none;color:var(--ink);font-weight:600;font-size:14px;padding:6px 14px;border-radius:99px;transition:background .15s}.sn a:hover{background:var(--lime);color:#0f2b3d}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
+.panel{box-shadow:0 6px 20px rgba(15,43,61,.07)}.navy .panel{box-shadow:none}
+.three a{transition:transform .2s,box-shadow .2s}.three a:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(15,43,61,.18)}
+button{transition:background .15s,transform .1s,opacity .15s}button:active{transform:scale(.97)}.tb:hover,.lad button:hover,.chips button:hover{opacity:.85}
+.tag{letter-spacing:.06em;text-transform:uppercase;font-size:12px}
+h2:after{content:"";display:block;width:64px;height:5px;background:var(--lime);margin-top:14px;border-radius:3px}
+tr:hover td{background:var(--mist)}.g{flex-wrap:wrap}
+.navy{background:linear-gradient(160deg,#0f2b3d 0%,#15405a 100%)}
+.hd2{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:12px}
+@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}@media(prefers-reduced-motion:no-preference){.f,.flow div{animation:fi .35s}}
+.bt{position:relative;height:110px;margin:26px 0 0}.bt i{position:absolute;top:0;bottom:0;width:50%}.bt .bl{left:0;background:var(--lime);clip-path:polygon(0 0,100% 38%,100% 62%,0 100%)}.bt .br{right:0;background:#2b5d7a;clip-path:polygon(0 38%,100% 0,100% 100%,0 62%)}.bt b{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--bg);border:3px solid var(--lime);border-radius:99px;padding:2px 12px;font-size:13px}
+.st{display:grid;grid-template-columns:repeat(6,1fr);gap:6px;margin-top:10px}.st a{text-decoration:none;color:var(--ink);border:2px solid var(--line);border-radius:10px;padding:10px 6px;text-align:center;font-weight:800;font-size:14px;background:var(--bg);transition:border-color .15s}.st a:hover{border-color:var(--lime)}.st small{display:block;margin-top:4px;font-weight:600;font-size:12px;color:var(--lg)}
+.out{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 8px}.out div{border:1px solid var(--line);border-left:5px solid var(--lime);border-radius:8px;padding:8px 14px;min-width:150px}.out b{display:block;font-size:26px;line-height:1.1}.out span{font-size:12px;color:var(--mute)}.navy .out div{border-color:#2a4f66;border-left-color:#8dc63f}.navy .out span{color:#b9cbd3}
+@media(max-width:600px){.st{grid-template-columns:repeat(3,1fr)}}
 a{color:var(--lg)}footer{font-size:14px;color:var(--mute);padding:26px 0 40px}
+.lad{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:6px;margin:22px 0 12px}.lad button{border:2px solid var(--line);background:var(--bg);color:var(--ink);border-radius:10px;padding:12px 6px;font-weight:800}.lad button[aria-pressed=true]{background:var(--lime);border-color:var(--lime);color:#0f2b3d}.lad small{display:block;font-weight:600;opacity:.7;font-size:12px}
+.wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;font-size:15px}th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}th{color:var(--mute)}.tb{border:0;background:var(--lime);color:#0f2b3d;border-radius:99px;padding:6px 14px}
+.bar{display:flex;height:30px;border-radius:8px;overflow:hidden;font-weight:800;font-size:12px;margin-bottom:12px}.bar i{display:flex;align-items:center;justify-content:center;font-style:normal;color:#0f2b3d;overflow:hidden;white-space:nowrap}
+.navy .f b{color:#b9cbd3}.navy .f span+b,.navy .f{row-gap:10px}input[type=range]{width:100%;accent-color:#3f7d00}
 @media(max-width:600px){.f{grid-template-columns:1fr}.sec{padding:48px 0}}
 </style></head><body>
 <header class="hero">
@@ -52,30 +72,44 @@ a{color:var(--lg)}footer{font-size:14px;color:var(--mute);padding:26px 0 40px}
 <div class="three">
 <a href="#buyers"><b>Reach AI buyers, then go deeper in every account</b></a>
 <a href="#launch"><b>Make every launch sellable on day one</b></a>
-<a href="#journey"><b>Run one customer journey on usage-based selling</b></a></div></div></header>
+<a href="#journey"><b>Own the customer lifecycle as pricing moves to usage</b></a></div></div></header>
+<nav class="sn" aria-label="Programs"><div class="w"><a href="#bowtie">The lifecycle</a><a href="#buyers">1. Reach AI buyers</a><a href="#launch">2. Launch sellable</a><a href="#journey">3. Customer lifecycle</a></div></nav>
 
+<section class="sec" id="bowtie"><div class="w"><span class="tag">The whole lifecycle</span>
+<h2>One bowtie, three programs</h2>
+<p class="lead">Revenue is won on the left and grown on the right. Each program owns part of that path and reports an outcome leaders can check. Tap a stage to jump to its program.</p>
+<div class="bt"><i class="bl"></i><i class="br"></i><b>Signed</b></div>
+<div class="st"><a href="#launch">Launch<small>Program 2</small></a><a href="#buyers">Discover<small>Program 1</small></a><a href="#buyers">Buy<small>Programs 1 and 2</small></a><a href="#journey">Onboard<small>Program 3</small></a><a href="#journey">Adopt<small>Program 3</small></a><a href="#journey">Renew and expand<small>Programs 3 and 1</small></a></div></div></section>
 <section class="sec mist"><div class="w"><h2>How I run every program</h2>
 <p class="lead">The method is the same for each one: spend the time on the real problem, get the right people to the answer, and keep it moving.</p>
 <div class="how"><div><b>Define</b>One-page brief: who is affected, the evidence, the measure.</div><div><b>Convene</b>The six or seven right people, one owner per piece.</div><div><b>Decide</b>One option, a decision log, an owner and a date.</div><div><b>Deliver</b>Owners do the work. I track risks, dependencies and one status view.</div></div></div></section>
 
 <section class="sec" id="buyers"><div class="w"><span class="tag">Program 1</span>
 <h2>Reach AI buyers, then go deeper in every account</h2>
-<p class="lead">AI buying pulls in more people than the data governance team. A play for each buyer, tracked in one account view, shows which seats are still empty.</p>
-<div class="panel"><h3>Sample account: who is engaged? Tap to mark.</h3><div class="chips" id="buy"></div><div class="meter"><i id="cv"></i></div><div class="v" id="cvt"></div><p id="nx" class="ex"></p></div>
-<div class="how"><div><b>A play per buyer</b>Buyer, trigger, discovery question, demo moment. Sellable now or 6 to 9 months out.</div><div><b>Multi-thread</b>A named owner for every empty seat in the top accounts.</div><div><b>Weekly review</b>Coverage and pipeline in one page for sales leaders.</div></div></div></section>
+<div class="out"><div><b id="o1a"></b><span>Forecast confidence (sample)</span></div><div><b id="o1b"></b><span>Accounts at Spread or beyond</span></div><div><b id="o1c"></b><span>Avg buyer seats engaged</span></div></div>
+<p class="lead">Account penetration is a sequence, not a checklist: land with the core buyer, bring in the executives who approve AI at scale, then spread use case by use case across business units. Each step has a signal that says it is time to move, and that signal becomes an exit criterion in the standardized sales process, not a feeling.</p>
+<div class="seg l" id="ind"></div><p id="ix" style="margin:0 0 4px"></p><div class="lad" id="lad"></div><div class="panel" id="lp"></div>
+<h3 style="margin-top:30px">Top accounts (sample): where each one stands and what moves it forward</h3>
+<div class="panel"><div class="hd2"><span><b id="wp" style="font-size:26px"></b><br><span class="mute">Weighted expansion pipeline (sample, by step probability). Tap Advance when the signal is met.</span></span><button class="tb" id="rs1">Reset sample</button></div><div class="bar" id="dist"></div><div class="wrap"><table id="acc"></table></div></div></div></section>
 
 <section class="sec navy" id="launch"><div class="w"><span class="tag">Program 2</span>
 <h2>Make every launch sellable on day one</h2>
-<p class="lead">A launch is not done until a seller can quote it, demo it and explain it. Make “ready to sell” a gate with owners, and guide sellers inside their tools instead of another training.</p>
-<div class="two"><div class="panel"><h3>Ready-to-sell gates (tap to change status)</h3><div id="gt"></div><div class="v" id="gv"></div></div>
-<div class="panel"><h3>How sellers learn the change</h3><div class="seg" id="seg"><button data-v="0">Today</button><button data-v="1">Guided in the workflow</button></div><p class="ex" id="gx"></p><p class="mute" style="margin:0">Example: a renewal process change.</p></div></div></div></section>
+<div class="out"><div><b id="o2a"></b><span>Launch gates done</span></div><div><b>10 days</b><span>Release to first quote, from 21 (sample)</span></div><div><b>60%</b><span>Launches ready on day one (sample)</span></div></div>
+<p class="lead">A launch is not done until a seller can quote it, demo it and explain it. Make “ready to sell” a sequence of gates with owners, then make the change stick in the seller’s workflow instead of another training.</p>
+<div class="panel"><h3>Ready-to-sell gates, in the order they have to happen (tap to change status)</h3><div id="gt"></div><div class="v" id="gv"></div><p class="mute" style="margin:12px 0 0;color:#b9cbd3">After launch: a 30-day review sends what sellers and customers are saying back to Product, and what just shipped back to sellers. Acquired capabilities, like those from Deasy Labs and trail ML, go through the same gates so they become plays sellers can use, not separate motions.</p></div>
+<div class="panel" style="margin-top:18px"><h3>How sellers learn the change (example: a renewal process change)</h3><div class="seg" id="seg"><button data-v="0">Today</button><button data-v="1">Guided in the workflow</button></div><div class="f" id="lx"></div><p class="mute" style="margin:14px 0 0;color:#b9cbd3" id="lm"></p></div>
+<div class="panel" style="margin-top:18px"><div class="hd2"><h3 style="margin:0">Optional view: the product and go-to-market feedback loop</h3><button class="tb" id="lt">Show the loop</button></div>
+<div id="lbox" hidden><p class="mute" style="color:#b9cbd3">Feedback travels up to Product, and what ships travels back down to sellers. Both directions need an owner and a cadence.</p><div class="lad" id="lps"></div><div class="f" id="lpd"></div><p class="v" style="font-size:17px">Two numbers I would report: days from feedback to a product decision, and days from release to first quote.</p></div></div></div></section>
 
 <section class="sec" id="journey"><div class="w"><span class="tag">Program 3</span>
-<h2>Run one customer journey on usage-based selling</h2>
-<p class="lead">Usage-based pricing means the relationship does not end at signature, and CEs take on more customer success. Define who does what at each moment, and fix the seams between sales, CE and support.</p>
+<h2>Own the customer lifecycle as pricing moves to usage</h2>
+<div class="out"><div><b>72%</b><span>Renewals with a plan at 120 days (sample)</span></div><div><b>0.8</b><span>Repeat escalations per account (sample)</span></div><div><b>112%</b><span>Net revenue retention (sample)</span></div></div>
+<p class="lead">With consumption pricing, success is decided after the sale. CEs already own demos, trials and adoption, and the organization is deciding what else the model needs. Map who owns each moment, where the handoffs break, and what to settle first.</p>
 <div class="line" id="line"></div><div class="panel" id="mp"></div>
-<h3 style="margin-top:32px">One seam, redesigned: the support escalation</h3>
-<div class="seg l" id="seg2"><button data-v="0">Today</button><button data-v="1">Redesigned</button></div><div class="flow" id="flow"></div></div></section>
+<h3 style="margin-top:32px" id="sh"></h3>
+<div class="seg l" id="seg2"><button data-v="0">Today</button><button data-v="1">Redesigned</button></div><div class="flow" id="flow"></div>
+<h3 style="margin-top:32px">Usage turns the renewal into a monthly conversation</h3>
+<div class="panel"><label for="us">Sample account: consumption at the halfway point, as a share of commit: <b id="uv"></b></label><input type="range" id="us" min="10" max="130" value="45"><div class="meter"><i id="um"></i></div><div class="v" id="ut"></div><p id="ua" style="margin:6px 0 0"></p></div></div></section>
 
 <section class="sec mist"><div class="w"><h2>First 90 days, and proof I have done this</h2>
 <div class="start"><div><h3>Days 1 to 30: learn</h3><p>Talk to the people who feel each problem. Write the one-page briefs. Baseline the numbers.</p></div><div><h3>Days 31 to 60: align</h3><p>Kick off the portfolio with one weekly rhythm, one status view and the launch gate list.</p></div><div><h3>Days 61 to 90: scale</h3><p>A structured roadmap, retrospectives that feed the playbook, and numbers leaders trust.</p></div></div>
@@ -85,25 +119,46 @@ a{color:var(--lg)}footer{font-size:14px;color:var(--mute);padding:26px 0 40px}
 <script>
 const $=id=>document.getElementById(id);
 // Program 1
-const B=[["Data governance lead","Already engaged: the core buyer today.",1],["CIO or head of IT","Play: one control plane to scale AI safely across the enterprise.",0],["Chief data officer","Play: prepare unstructured data safely for AI.",0],["AI and ML platform lead","Play: govern agents in production with live oversight.",0],["Risk and compliance head","Play: turn policy into controls with audit-ready evidence.",0],["Business sponsor","Play: prove value in 30 days on their own scenario.",0],["Security lead","Play: see which agents touch sensitive data.",0]];
-function dB(){$("buy").innerHTML=B.map((b,i)=>`<button data-i="${i}" aria-pressed="${!!b[2]}">${b[2]?"✓ ":""}${b[0]}</button>`).join("");const n=B.filter(b=>b[2]).length;$("cv").style.width=n/B.length*100+"%";$("cvt").textContent=`${n} of ${B.length} buyer seats engaged`;
-const o=B.find(b=>!b[2]);$("nx").textContent=o?`Next seat to open: ${o[0]}. ${o[1]}`:"Every seat is engaged. Next: expand to a second business unit."}
-$("buy").onclick=e=>{const b=e.target.closest("button");if(b){B[b.dataset.i][2]=B[b.dataset.i][2]?0:1;dB()}};dB();
+const L=[["Land","Land with the core buyer","Data governance lead, data stewards","Win one governed use case that proves value","A signed use case with a measurable outcome","Time to first value"],
+["Multi-thread","Bring in technical and executive buyers","CIO or head of IT, chief data officer, AI and ML platform lead","Show how one control plane governs data and AI together","A named executive sponsor and a joint success plan","Buyer seats engaged"],
+["Approve at scale","Reach the people who sign off on AI","Risk and compliance head, security lead, business sponsor","Turn policy into controls with audit-ready evidence","AI use cases approved to move into production","Use cases in production"],
+["Spread","Spread across business units, one use case at a time","Business unit data and AI leads","Reuse the same policies for each new unit’s use cases","A second and third business unit live, each with its own owner","Business units live"],
+["Standardize","Become the enterprise standard","Executive sponsor, procurement, finance","Make the control plane the default for every AI project","Usage and renewal reviewed monthly against the plan","Usage growth and renewal health"]];
+const IN=[["Financial services","Model risk and audit rules require proof of what AI can access and decide","chief risk officer and model risk lead","audit-ready evidence for every AI use case"],["Healthcare and life sciences","Patient and trial data must stay governed as AI is applied to it","privacy officer and clinical data lead","which agents can touch regulated data"],["Public sector","AI must be approved and traceable before it reaches citizens","chief data officer and compliance lead","policy turned into controls, with a full audit trail"]];let ii=0;
+function dI(){$("ind").innerHTML=IN.map((x,i)=>`<button data-i="${i}" aria-pressed="${i==ii}">${x[0]}</button>`).join("");const x=IN[ii];$("ix").innerHTML=`<b>Industry motion (sample):</b> ${x[1]}. Add the ${x[2]}, and lead with ${x[3]}.`}
+$("ind").onclick=e=>{const b=e.target.closest("button");if(b){ii=+b.dataset.i;dI()}};dI();
+let lsel=0;function dL(){$("lad").innerHTML=L.map((l,i)=>`<button data-i="${i}" aria-pressed="${i==lsel}"><small>Step ${i+1}</small>${l[0]}</button>`).join("");const l=L[lsel];
+$("lp").innerHTML=`<h3>${l[1]}</h3><div class="f"><b>Who to engage</b><span>${l[2]}</span><b>Play</b><span>${l[3]}</span><b>Signal to move on</b><span>${l[4]}</span><b>What I measure</b><span>${l[5]}</span></div>`}
+$("lad").onclick=e=>{const b=e.target.closest("button");if(b){lsel=+b.dataset.i;dL()}};dL();
+const P=[.1,.25,.4,.6,.8],A=[["Sample Global Bank",1,4.0],["Sample Insurer",2,2.5],["Sample Retailer",0,1.2],["Sample Health System",3,3.0],["Sample Manufacturer",1,1.8]],CL=["#d9efbd","#c3e48f","#a6d65c","#8dc63f","#6fa82b"];
+const SE=[1,3,5,6,6];function o1(){const t=A.reduce((n,a)=>n+a[2],0),w=A.reduce((n,a)=>n+a[2]*P[a[1]],0);$("o1a").textContent=Math.round(w/t*100)+"%";$("o1b").textContent=A.filter(a=>a[1]>=3).length+" of "+A.length;$("o1c").textContent=(A.reduce((n,a)=>n+SE[a[1]],0)/A.length).toFixed(1)+" of 6"}
+function dA(){o1();$("wp").textContent="$"+A.reduce((n,a)=>n+a[2]*P[a[1]],0).toFixed(1)+"M";const c=L.map((l,i)=>A.filter(a=>a[1]==i).length);$("dist").innerHTML=c.map((n,i)=>n?`<i style="width:${n/A.length*100}%;background:${CL[i]}">${L[i][0]}: ${n}</i>`:"").join("");
+$("acc").innerHTML="<tr><th>Account</th><th>Stage</th><th>Opportunity</th><th>To move forward</th><th></th></tr>"+A.map((a,i)=>`<tr><td><b>${a[0]}</b></td><td>${L[a[1]][0]}</td><td>$${a[2]}M</td><td>${a[1]<4?L[a[1]][4]:"Monthly usage and renewal review"}</td><td>${a[1]<4?`<button class="tb" data-i="${i}">Advance</button>`:""}</td></tr>`).join("")}
+const A0=A.map(a=>a[1]);$("acc").onclick=e=>{const b=e.target.closest(".tb");if(b){A[b.dataset.i][1]++;dA()}};$("rs1").onclick=()=>{A.forEach((a,i)=>a[1]=A0[i]);dA()};dA();
 // Program 2
-const G=[["Pricing and packaging published","Finance"],["Contract terms ready","Legal"],["Quoting set up in Salesforce","Sales ops"],["Demo environment stable","CE leadership"],["Sellers enabled","Enablement"],["Support runbook ready","Support"]],gs=[2,2,1,0,0,0],GL=["Not started","In progress","Done"];
-function dG(){$("gt").innerHTML=G.map((g,i)=>`<div class="g"><span>${i+1}. ${g[0]}<br><span class="mute" style="font-size:14px">${g[1]}</span></span><button class="s${gs[i]}" data-i="${i}">${GL[gs[i]]}</button></div>`).join("");
-const d=gs.filter(x=>x==2).length,f=G.find((g,i)=>gs[i]<2)||G.find((g,i)=>gs[i]<2);const k=gs.findIndex(x=>x<2);
-$("gv").textContent=d==6?"Ready to sell.":`${d} of 6 done. First blocker: ${G[k][0]} (${G[k][1]}).`;$("gv").style.color=d==6?"#8dc63f":"#ffc94d"}
+const G=[["Positioning and target buyers set","Product marketing","Who we sell to and the story"],["Packaging and pricing published","Finance and pricing","Needs positioning"],["Contract and legal terms ready","Legal","Needs pricing"],["Quote and order setup in Salesforce","Sales ops and Finance","Needs pricing and terms, includes usage billing"],["Demo environment and proof points stable","CE leadership","Needs positioning"],["Delivery and support runbook ready","Services and Support","Needs terms and a stable demo"],["Seller enablement delivered and checked","Enablement","Needs every gate above"],["Go or no-go: ready to sell","Program manager with leaders","Needs every gate done"]],gs=[2,2,1,0,1,0,0,0],GL=["Not started","In progress","Done"];
+function dG(){$("gt").innerHTML=G.map((g,i)=>`<div class="g"><span>${i+1}. ${g[0]}<br><span style="font-size:14px;color:#b9cbd3">${g[1]} · ${g[2]}</span></span><button class="s${gs[i]}" data-i="${i}">${GL[gs[i]]}</button></div>`).join("");
+const d=gs.filter(x=>x==2).length,k=gs.findIndex(x=>x<2);$("gv").textContent=k<0?"Ready to sell.":`${d} of ${G.length} done. First blocker: ${G[k][0]} (${G[k][1]}).`;$("gv").style.color=k<0?"#8dc63f":"#ffc94d";$("o2a").textContent=d+" of "+G.length}
 $("gt").onclick=e=>{const b=e.target.closest("button");if(b){gs[b.dataset.i]=(gs[b.dataset.i]+1)%3;dG()}};dG();
-const X=["Attend a training, then try to remember a long process on your own.","The system shows the next step at the moment of need, so nobody has to remember the process."];let gv=1;
-function dX(){$("seg").querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",+b.dataset.v==gv));$("gx").textContent=X[gv]}
+const X=[["Announce","Learn","Apply","Reinforce","Improve"],["An email and a webinar","Sellers attend, or watch a replay if they have time","Weeks later a renewal comes up and nobody remembers the steps","Sellers ask a manager or a chat channel, and the process is followed unevenly","Ops cleans up the data after the fact"],["A short brief inside the seller’s workflow: what changes, why, and what to do","A guided path in the CRM shows the next step at the moment a renewal comes up","A two-question check in week one confirms sellers understood","Managers see who used the new step, with coaching prompts for their team","Sellers flag friction in one place, and the fix ships within two weeks"]],XM=["Measured by: attendance.","Measured by: adoption by team, time to first correct use, manager coaching completed, and data errors after the change."];let gv=1;
+function dX(){$("seg").querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",+b.dataset.v==gv));$("lx").innerHTML=X[0].map((l,i)=>`<b>${l}</b><span>${X[gv+1][i]}</span>`).join("");$("lm").textContent=XM[gv]}
 $("seg").onclick=e=>{const b=e.target.closest("button");if(b){gv=+b.dataset.v;dX()}};dX();
+// Feedback loop
+const LO=[["Hear","Sellers, CEs and Support","Feedback is captured where it happens: lost-deal reasons, objections and feature asks.","Continuous","Feedback items captured each week"],["Capture","Sales ops and the program manager","One intake with a standard tag set: account, buyer, product area and deal impact.","Daily intake","Share of items with deal impact tagged"],["Triage","Product and go-to-market leads","Group the themes and size them by revenue at stake. The top five go to Product.","Weekly","Themes triaged within a week"],["Decide","Product","A yes, no or later for each theme, with a reason the field can repeat to customers.","Weekly","Days from theme to decision"],["Ship","Product and Engineering","Each release ships with a seller-ready summary: what it does, the problem it solves, and sellable now or later.","Each release","Releases with a seller summary on day one"],["Tell","Enablement and the program manager","Update plays, demos, pricing and the launch gates, then close the loop with whoever raised it.","Within a week of release","Days from release to first quote"]];
+let lo=0;function dLo(){$("lps").innerHTML=LO.map((l,i)=>`<button data-i="${i}" aria-pressed="${i==lo}"><small>${i<3?"Field to Product":"Product to field"}</small>${i+1}. ${l[0]}</button>`).join("");const l=LO[lo];$("lpd").innerHTML=`<b>Owner</b><span>${l[1]}</span><b>What happens</b><span>${l[2]}</span><b>Cadence</b><span>${l[3]}</span><b>What I measure</b><span>${l[4]}</span>`}
+$("lps").onclick=e=>{const b=e.target.closest("button");if(b){lo=+b.dataset.i;dLo()}};dLo();
+$("lt").onclick=()=>{const h=$("lbox").hidden;$("lbox").hidden=!h;$("lt").textContent=h?"Hide the loop":"Show the loop"};
 // Program 3
-const M=[["Discover","A credible AI story in the first conversation","AE leads, CE adds depth","Only IT buyers in the room"],["Buy","A demo on their scenario shows value fast","AE and CE together, Product on call","Demo fails or pricing is missing"],["Onboard","First value inside 30 days","CE owns, Services delivers","Delivery does not match what was sold"],["Adopt","Teams use it and see results","CE with customer success duties","Usage stalls after launch"],["Renew","The customer sees the value and adds more","AE leads with usage evidence","Surprise renewals and repeat escalations"]];
-let mi=3;function dM(){$("line").innerHTML=M.map((m,i)=>`<button data-i="${i}" aria-pressed="${i==mi}" class="${i==3?"hot":""}"><i></i>${m[0]}</button>`).join("");
-$("mp").innerHTML=`<div class="f"><b>Moment that matters</b><span>${M[mi][1]}</span><b>Who does what</b><span>${M[mi][2]}</span><b>Failure signal</b><span>${M[mi][3]}</span></div>`}
-$("line").onclick=e=>{const b=e.target.closest("button");if(b){mi=+b.dataset.i;dM()}};dM();
-const FL=[["Support reply misses","Customer emails the AE","AE asks the CE","CE hunts for context","Customer waits, two sellers lose a day"],["Triage by tier, one named owner","Case summary attached automatically","Escalate only with context and an agreed service level","CE or AE gets one clear ask","Fewer repeat escalations per account"]];
-let fv=0;function dF(){$("seg2").querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",+b.dataset.v==fv));$("flow").className="flow t"+(fv+1);$("flow").innerHTML=FL[fv].map(x=>`<div>${x}</div>`).join("<em>→</em>")}
-$("seg2").onclick=e=>{const b=e.target.closest("button");if(b){fv=+b.dataset.v;dF()}};dF();
+const M=[["Discover","A credible AI story in the first conversation","AE leads, CE adds technical depth, Marketing sets context","Only IT buyers in the room","Which buyer signals count as qualified?","Interest signal to first conversation",["An AI interest signal lands in a queue","The rep sees no context","Follow-up is slow and generic","The lead goes cold"],["Signal scored by buyer and trigger event","Routed to a named owner","Play and discovery questions attached","Follow-up within a day","Tracked from lead to opportunity"]],
+["Buy","A demo on their scenario shows value fast","AE and CE together, Product on call","Demo fails or the trial has no goal","What are the exit criteria for the demo and trial stages?","Demo and trial handoff",["The AE asks for a demo late","The CE builds it from scratch","The trial has no success criteria","The deal stalls"],["Stage gate: demo request names the buyer scenario","CE uses a standard demo kit","Trial starts with agreed success criteria","Criteria met, so the quote goes out","The deal moves at stage speed"]],
+["Onboard","First value inside 30 days","CE owns the plan, Services delivers","Delivery does not match what was sold","Who owns the first 30 days: CE or Services?","Sale to delivery handoff",["The deal closes with notes in an email","CE and Services restart discovery","First value slips","The customer’s patience drops"],["Closed-won brief: use case, buyers, success measure","One owner and a 30-day plan","Both teams review it together","First value reached on time"]],
+["Adopt","Teams use it and see results","CE with customer success duties, Support for issues","Usage stalls after launch","Does adoption need dedicated capacity beyond CE?","Support escalation",["Support reply misses","Customer emails the AE","AE asks the CE","CE hunts for context","Customer waits, two sellers lose a day"],["Triage by tier, one named owner","Case summary attached automatically","Escalate only with context and a service level","CE or AE gets one clear ask","Training coverage and repeat escalations tracked"]],
+["Renew","The customer sees the value and adds more","AE leads with usage evidence, CE supports","Surprise renewals and repeat escalations","Who owns the renewal plan: AE with CE, or a customer success role?","Renewal on usage",["The renewal date approaches","The AE checks in late","Open escalations surface","The CE scrambles","The customer negotiates from frustration"],["Renewal plan starts 120 days out from usage and health","Open escalations closed first, with an owner","AE and CE share a value summary","Executive sponsor check-in","Renewal and expansion on usage evidence"]]];
+const MT=[["Pipeline coverage of 3.2x","AEs with Marketing"],["Demo to quote in 21 days","AEs and CEs"],["First value in 34 days","CE with Services"],["62% of licensed staff trained","CE with customer success duties"],["Usage at 78% of commit","AE with CE"]];
+let mi=3,fv=0;function dM(){$("line").innerHTML=M.map((m,i)=>`<button data-i="${i}" aria-pressed="${i==mi}" class="${i==3?"hot":""}"><i></i>${m[0]}</button>`).join("");const m=M[mi];
+$("mp").innerHTML=`<div class="f"><b>Moment that matters</b><span>${m[1]}</span><b>Who does what</b><span>${m[2]}</span><b>Failure signal</b><span>${m[3]}</span><b>Decision to settle</b><span>${m[4]}</span><b>The number (sample)</b><span>${MT[mi][0]}, owned by ${MT[mi][1]}</span></div>`;
+$("sh").textContent=`The seam at this moment: ${m[5]}`;$("seg2").querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",+b.dataset.v==fv));$("flow").className="flow t"+(fv+1);$("flow").innerHTML=m[6+fv].map(x=>`<div>${x}</div>`).join("<em>→</em>")}
+$("line").onclick=e=>{const b=e.target.closest("button");if(b){mi=+b.dataset.i;dM()}};$("seg2").onclick=e=>{const b=e.target.closest("button");if(b){fv=+b.dataset.v;dM()}};dM();
+const U=[[40,"Adoption risk","CE leads an adoption play, an executive check-in is booked, and a recovery plan is agreed before the renewal quarter."],[86,"On track","Monthly usage review with the customer, and a short value summary for the sponsor."],[111,"Healthy and growing","Plan the expansion with the business sponsor early, and open the next business unit."],[999,"Over commit","The AE opens an expansion and true-up conversation now, with usage evidence."]];
+$("us").oninput=()=>{const v=+$("us").value,u=U.find(x=>v<x[0]);$("uv").textContent=v+"%";$("um").style.width=Math.min(v,130)/130*100+"%";$("um").style.background=v<40?"#d9503f":"#8dc63f";$("ut").textContent=u[1];$("ua").textContent=u[2]};$("us").oninput();
 </script></body></html>
